@@ -5,7 +5,7 @@ function App() {
   const [data] = useAxios("www.google.de", "get")
   return (
     <>
-      {JSON.stringify(data)}
+      {JSON.stringify(data.headers.date)}
     </>
   )
 }
